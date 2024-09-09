@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inventory system</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="box">
+      <h1>Система инвентаризации</h1>
+    </div>
+    <div class="box">
+      <h4>Добавьте продукт:</h4>
+    </div>
+    <div class="form">
+      <div class="form-input-wrapper">
+        <label for="type-select">Тип продукта</label>
+        <select name="type" id="type-select">
+          <option value="">Выберите тип продукта</option>
+          <option value="Овощи/Фрукты">Овощи/Фрукты</option>
+          <option value="Полуфабрикаты">Полуфабрикаты</option>
+          <option value="Сыры/колбасы">Сыры/колбасы</option>
+          <option value="Полезное питание">Полезное питание</option>
+          <option value="Напитки">Напитки</option>
+          <option value="Уход за собой">Уход за собой</option>
+        </select>
+      </div>
+      <div class="form-input-wrapper">
+        <label for="product-name">Название продукта</label>
+        <input type="text" id="product-name">
+      </div>
+      <div class="form-input-wrapper">
+        <label for="product-number">Количество</label>
+        <input type="number" id="product-count">
+      </div>
+    </div>
+    <div class="form-submit-box">
+      <button class="add-product" >Добавить продукт</button>
+      <button class="clear-list">Очистить список</button>
+    </div>
+    <div class="box products-title">
+      <h4>Список продуктов</h4>
+    </div>
+    <div class="products-wrapper">
+      <div class="products-list">
+        <div class="product-item"></div>
+      </div>
+    </div>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
